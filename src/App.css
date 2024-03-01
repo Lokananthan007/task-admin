@@ -82,3 +82,88 @@ h2{
   color: red;
   margin-top: 20px;
 }
+
+.login{
+  padding-top: 50px;
+  height: 100vh;
+  color:black;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login p{
+  color: black;
+  padding-left: 30px;
+  font-size: 20px;
+}
+.login hr{
+  width: 100% !important;
+}
+.login form{
+  margin-left: 25%;
+  margin-top: 30px;
+  align-items: center;
+  width: 40%;
+  border-radius: 20px;
+  background-color: rgba(195, 182, 182, 0.3);
+  padding-top: 50px;
+  padding-bottom: 30px;
+  box-shadow: 2px 2px 3px rgb(104, 138, 251);
+  
+}
+.login form label{
+  font-size: 20px;
+  color: blue;
+  padding-top: 20px;
+  padding-left: 80px;
+  width: 100%;
+}
+.login form input{
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+.login form input:focus{
+  border: none !important;
+}
+.loginform input:active{
+  border: none;
+}
+.login form input:hover{
+  border: none;
+}
+.login form .btn{
+  margin-top: 30px;
+  margin-bottom: 20px;  
+  width: 70%;
+  background-color:rgb(203, 40, 40);
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 80px;
+  color: white;
+  font-size: 15px;
+} 
+.login form .btn:hover{
+  background-color:rgb(0, 4, 250);
+  color: white;
+}
+.login form .row {
+ 
+  background-color: rgb(250, 157, 188);
+}
+.login form .col img{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 60px;
+  border-radius: 50px;
+  width: 80%;
+  height: 500px;
+
+}
+.login .form .col img:hover{
+background-color: rgb(119, 116, 116,.5);
+}

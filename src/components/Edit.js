@@ -51,7 +51,7 @@ function Edit() {
     e.preventDefault();
     console.log("Form Data:", formData);
     try {
-      const response = await axios.put(`http://localhost:4455/user/${userId}`, formData, {
+      const response = await axios.put(`http://localhost:4455/user/put/${userId}`, formData, {
         headers: {
           "Content-Type": "application/json",
         },

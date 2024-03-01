@@ -43,7 +43,7 @@ function Bar() {
 
     if (isConfirmed) {
       try {
-        const response = await fetch("http://localhost:4455/delete", {
+        const response = await fetch("http://localhost:4455/user/delete", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
