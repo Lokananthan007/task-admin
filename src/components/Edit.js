@@ -7,7 +7,9 @@ function Edit() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    mobile:"",
     city: "",
+    dob:"",
   });
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
@@ -23,7 +25,9 @@ function Edit() {
             setFormData({
               name: responseData.name || "",
               email: responseData.email || "",
+              mobile: responseData.mobile || "",
               city: responseData.city || "",
+              dob: responseData.dob || "",
             });
           } else {
             setError("Failed to fetch user data. Server returned status: " + response.status);
@@ -92,6 +96,15 @@ function Edit() {
             value={formData.email}
             onChange={handleChange}
           />
+          </div>
+        <div>
+          <label>Phone Number:</label>
+          <input
+            type="number"
+            name="mobile"
+            value={formData.mobile}
+            onChange={handleChange}
+          />
         </div>
         <div>
           <label>City:</label>
@@ -99,6 +112,15 @@ function Edit() {
             type="text"
             name="city"
             value={formData.city}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <label>DOB:</label>
+          <input
+            type="date"
+            name="dob"
+            value={formData.dob}
             onChange={handleChange}
           />
         </div>
